@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 void mergeSortedArrays(const int arr1[], int size1, const int arr2[], int size2, int merged[]) {
     int i = 0, j = 0, k = 0;
@@ -30,11 +31,11 @@ int main() {
 
     mergeSortedArrays(arr1, size1, arr2, size2, merged);
 
-    std::cout << "Merged array: ";
+    cout << "Merged array: ";
     for (int i = 0; i < size1 + size2; ++i) {
-        std::cout << merged[i] << " ";
+        cout << merged[i] << " ";
     }
-    std::cout << std::endl;
+    cout << endl;
 
     return 0;
 }

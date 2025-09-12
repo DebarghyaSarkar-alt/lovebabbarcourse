@@ -4,6 +4,7 @@ using namespace std;
 
 void merge(int *arr, int s, int e)
 {
+    //amra array take divide korbo into two halves and store it into a new array
     int mid = s + (e - s) / 2;
     int len1 = mid - s + 1;
     int len2 = e - mid;
@@ -33,7 +34,9 @@ void merge(int *arr, int s, int e)
         {
             arr[k++] = second[index2++];
         }
+
     }
+    //remaining elements fill korbo
     while (index1 < len1)
     {
         arr[k++] = first[index1++];
