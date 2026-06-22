@@ -2,7 +2,7 @@
 #include <queue>
 using namespace std;
 class node
-{
+{//ruk checking
 public:
     int data;
     node *left;
